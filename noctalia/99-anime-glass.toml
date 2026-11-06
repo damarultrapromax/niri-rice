@@ -1,0 +1,107 @@
+# Noctalia v5.4+ — Anime Glassmorphism profile
+# Native floating dock with macOS-style magnification and Smart auto-hide.
+
+[theme]
+mode = "dark"
+shell_mode = "follow"
+source = "wallpaper"
+wallpaper_scheme = "soft"
+sync_color_scheme = true
+
+[shell]
+corner_radius_scale = 1.25
+settings_window_translucent = true
+
+[shell.shadow]
+direction = "down"
+alpha = 0.58
+
+[shell.panel]
+transparency_mode = "glass"
+borders = true
+border_color = "outline_variant"
+border_width = 1.0
+shadow = true
+launcher_placement = "floating"
+launcher_position = "center"
+clipboard_placement = "floating"
+clipboard_position = "center"
+control_center_placement = "attached"
+control_center_position = "center"
+open_near_click_control_center = false
+wallpaper_placement = "floating"
+wallpaper_position = "center"
+session_placement = "floating"
+session_position = "center"
+polkit_placement = "floating"
+polkit_position = "center"
+floating_offset = 12
+[control_center]
+sidebar = "full"
+width = 1200
+show_shortcut_labels = true
+
+# Keep the existing top bar only. The full-width bottom taskbar is removed.
+[bar]
+order = ["default"]
+
+[bar.default]
+position = "top"
+enabled = true
+layer = "top"
+reserve_space = true
+thickness = 40
+background_opacity = 0.62
+compositor_blur = true
+border = "outline_variant"
+border_width = 1.0
+shadow = true
+radius = 20
+margin_ends = 180
+margin_edge = 8
+padding = 14
+widget_spacing = 8
+capsule = true
+capsule_fill = "surface_container_high"
+capsule_opacity = 0.58
+capsule_border = "outline_variant"
+capsule_border_width = 0.7
+
+# Native standalone dock: larger icons + macOS-style pointer magnification.
+[dock]
+enabled = true
+position = "bottom"
+icon_size = 56
+main_axis_padding = 20
+cross_axis_padding = 14
+item_spacing = 10
+background_opacity = 0.76
+border = "outline_variant"
+border_width = 1.0
+shadow = true
+radius = 22
+margin_ends = 0
+margin_edge = 12
+show_running = true
+auto_hide = false
+smart_auto_hide = true
+reserve_space = false
+layer = "top"
+active_scale = 1.0
+inactive_scale = 0.9
+magnification = true
+magnification_scale = 1.8
+active_opacity = 1.0
+inactive_opacity = 0.92
+show_instance_count = true
+show_dots = true
+launcher_position = "none"
+pinned = ["kitty", "google-chrome", "org.kde.dolphin", "spotify"]
+
+[wallpaper]
+enabled = true
+fill_mode = "crop"
+fill_color = "#11111B"
+directory = "/home/archlarper/Pictures/Wallpapers/Anime"
+transition = ["fade", "wipe", "disc", "stripes", "zoom", "honeycomb"]
+transition_duration = 1800
