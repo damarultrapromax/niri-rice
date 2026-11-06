@@ -84,7 +84,7 @@ done
 ### 3. Salin konfigurasi
 
 ```bash
-git clone https://github.com/<username>/niri-rice.git
+git clone https://github.com/damarultrapromax/niri-rice.git
 cd niri-rice
 mkdir -p ~/.config/{niri,noctalia,kitty,fuzzel,foot,fish/conf.d}
 cp niri/config.kdl ~/.config/niri/
